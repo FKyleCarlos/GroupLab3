@@ -5,6 +5,7 @@
 
 var costPerDay = 0
 var numberOfDaysSelected = 0
+var clearButton = document.querySelector("clear-button")
 
 
 /********* colour change days of week *********/
@@ -23,10 +24,10 @@ function clearButton() {
     var days = document.querySelectorAll(".day-selector li");
 
     days.forEach(function(day) {
-        day.removeAttribute("class");
+        day.removeAttribute("clicked");
     });
     
-    var calculated = 0
+    costPerDay = 0
 }
 
 /********* change rate *********/
