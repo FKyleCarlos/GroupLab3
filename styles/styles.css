@@ -74,10 +74,47 @@ body {
     - the pair of fake-buttons will be centered on the page. HINT: can calculate the required margin to make them appear to be centered.
 */
 
-
-
-
-
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    .about-us h2 {
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 1
+    }
+    
+    .about-us {
+        margin-bottom: 50px;
+    }
+    
+    p {
+        margin-bottom: 12px;
+    }
+    
+    img {
+    width: 300px;
+    margin-left: 25px;
+    margin-bottom: 50px
+    }
+    
+    .fake-button {
+        background-color: #E5AF42 ;
+        color: black;
+        padding: 20px;
+        width: 250px;
+        margin-right: 150px;
+        margin: 50px;
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    .fake-button:hover {
+        background-color: #4278e5;
+        color: white;
+    }
 
 /************* bookings page *************/
 
@@ -93,16 +130,61 @@ body {
 
 */
 
+.booking-page {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 150px;
+    width: 600px;
+    margin: 0;
 
+  }
 
+.booking-page h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+  }
+  
+.booking-page p {
+    font-size: 18px;
+  }
 
+ul.flex.day-selector li {
+    border: 1px solid black;
+    margin-right: 20px;
+    width: 60px;
+    text-align: center;
+    margin-bottom: 12px;
+}
 
+.day-selector li.clicked {
+    background-color: #E5AF42;
+}
 
+.small-button {
+    border: 1px solid black;
+    padding: 5px; 
+}
 
+#clear-button {
+    border: 1px solid black;
+    width: 200px;
+    margin-top: 0px
+} 
 
+.fake-button:hover {
+    background-color: #4278e5;
+    color: white;
+}
 
+.top-margin {
+    margin-top: 24px;
+    margin-bottom: 12px
+}
 
-
+.clicked {
+    background-color: #E5AF42;
+}
 
 
 /************* contact page *************/

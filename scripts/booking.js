@@ -3,7 +3,12 @@
 // Do any of these variables need to be initialized when the page is loaded? 
 // When do they need to be reset or updated?
 
-
+var costPerDay = 0
+var calculatedCost = document.getElementById("calculated-cost")
+var numberOfDaysSelected = 0
+var clearButton = document.querySelector("clear-button")
+var halfButton = document.getElementById("half")
+var fullButton = document.getElementById("full")
 
 
 /********* colour change days of week *********/
@@ -17,22 +22,45 @@
 /********* clear days *********/
 // when the clear-button is clicked, the "clicked" class is removed from all days, any other relevant variables are reset, and the calculated cost is set to 0.
 
+function clearButton() {
 
+    var days = document.querySelectorAll(".day-selector li");
 
-
-
+    days.forEach(function(day) {
+        day.removeAttribute("clicked");
+    });
+    
+    costPerDay = 0
+}
 
 /********* change rate *********/
 // when the half-day button is clicked, set the daily rate to $20, add the "clicked" class to the "half" element, remove it from the "full" element, and recalculate the total cost.
 
+halfButton.addEventListener("click", function(event){
 
+    costPerDay = 20;
 
+    calculatedCost.textContent = costPerDay;
+
+    halfButton.classList.add("clicked");
+    fullButton.classList.remove("clicked");
+
+    //add total cost calculator//;
+})
 
 // when the full-day button is clicked, the daily rate is set back to $35, the clicked class is added to "full" and removed from "half", and the total cost is recalculated.
 
+fullButton.addEventListener("click", function(event){
 
+    costPerDay = 35;
 
+    calculatedCost.textContent = costPerDay;
 
+    fullButton.classList.add("clicked");
+    halfButton.classList.remove("clicked");
+
+    //add total cost calculator//;
+})
 
 /********* calculate *********/
 // when a calculation is needed, set the innerHTML of the calculated-cost element to the appropriate value
