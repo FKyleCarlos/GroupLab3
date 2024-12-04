@@ -130,7 +130,6 @@ body {
 
 */
 
-
 .booking-page {
     display: flex;
     flex-direction: column; 
@@ -165,10 +164,6 @@ ul.flex.day-selector li {
 .small-button {
     border: 1px solid black;
     padding: 5px; 
-}
-
-#full {
-    background-color: #E5AF42;
 }
 
 #clear-button {

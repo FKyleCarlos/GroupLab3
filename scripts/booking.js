@@ -4,8 +4,11 @@
 // When do they need to be reset or updated?
 
 var costPerDay = 0
+var calculatedCost = document.getElementById("calculated-cost")
 var numberOfDaysSelected = 0
 var clearButton = document.querySelector("clear-button")
+var halfButton = document.getElementById("half")
+var fullButton = document.getElementById("full")
 
 
 /********* colour change days of week *********/
@@ -33,7 +36,17 @@ function clearButton() {
 /********* change rate *********/
 // when the half-day button is clicked, set the daily rate to $20, add the "clicked" class to the "half" element, remove it from the "full" element, and recalculate the total cost.
 
+halfButton.addEventListener("click", function(event){
 
+    costPerDay = 20;
+
+    calculatedCost.textContent = costPerDay;
+
+    halfButton.classList.add("clicked");
+    fullButton.classList.remove("clicked");
+
+    //add total cost calculator//
+})
 
 
 
