@@ -45,16 +45,22 @@ halfButton.addEventListener("click", function(event){
     halfButton.classList.add("clicked");
     fullButton.classList.remove("clicked");
 
-    //add total cost calculator//
+    //add total cost calculator//;
 })
-
-
-
-
-
 
 // when the full-day button is clicked, the daily rate is set back to $35, the clicked class is added to "full" and removed from "half", and the total cost is recalculated.
 
+fullButton.addEventListener("click", function(event){
+
+    costPerDay = 35;
+
+    calculatedCost.textContent = costPerDay;
+
+    fullButton.classList.add("clicked");
+    halfButton.classList.remove("clicked");
+
+    //add total cost calculator//;
+})
 
 
 
