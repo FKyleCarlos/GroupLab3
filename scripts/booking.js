@@ -4,7 +4,7 @@
 // When do they need to be reset or updated?
 
 var costPerDay = 0
-
+var numberOfDaysSelected = 0
 
 
 /********* colour change days of week *********/
