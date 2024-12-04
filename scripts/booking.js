@@ -62,9 +62,6 @@ fullButton.addEventListener("click", function(event){
     //add total cost calculator//;
 })
 
-
-
-
 /********* calculate *********/
 // when a calculation is needed, set the innerHTML of the calculated-cost element to the appropriate value
 
