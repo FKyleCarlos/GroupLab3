@@ -3,7 +3,7 @@
 // Do any of these variables need to be initialized when the page is loaded? 
 // When do they need to be reset or updated?
 
-
+var costPerDay = 0
 
 
 
@@ -31,6 +31,10 @@ function clearButton() {
 
 /********* change rate *********/
 // when the half-day button is clicked, set the daily rate to $20, add the "clicked" class to the "half" element, remove it from the "full" element, and recalculate the total cost.
+
+
+
+
 
 
 
