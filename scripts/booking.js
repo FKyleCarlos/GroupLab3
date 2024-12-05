@@ -97,4 +97,3 @@ function recalculate(){
     calculatedCost = numberOfDaysSelected * costPerDay
     document.getElementById("calculated-cost").innerHTML = calculatedCost
 }
-

@@ -42,10 +42,51 @@ body {
         - change the cursor to pointer.
 */
 
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 48px;
+    margin: auto
+  }
 
+ h2 {
+    font-size: 36px;
+    margin-bottom: 12px;
+ }
 
+.large-text {
+    font-size: 24px;
+}
 
+.fake-button {
+    background-color: #E5AF42;
+    align-items: center;
+    line-height: 3;
+    border: solid black 1px;
+    margin: auto;
+}
 
+a {
+    text-decoration: none;
+    color: black
+}
+
+a main footer:hover {
+    text-decoration: underline;
+}
+.fake-button:hover {
+    text-decoration: underline;
+    background-color:#4278e5 ;
+    color: white;
+    cursor: pointer
+}
+
+.blue:hover {
+    text-decoration: underline;
+    background-color:#4278e5 ;
+    color: white;
+    cursor: pointer
+}
 
 
 
@@ -59,7 +100,27 @@ body {
     - the footer will be 60px tall, have a font-weight of 200, and the text within will be centered vertically and horizontally.
 */
 
+header {
+    background-color: #E5AF42;
+    text-align: center;
+    height: 150px;
+    margin-bottom: 50px;
+}
 
+header img {
+    width: 100px;
+    height: 100px;
+    padding: 25px;
+
+}
+footer {
+    background-color: #E5AF42;
+    text-align: center;
+    font-weight: 200px;
+    height: 150x;
+    margin-top: 50px;
+    margin: auto;
+}
 
 
 
@@ -79,42 +140,30 @@ body {
     align-items: center;
     justify-content: center;
     }
-    
-    .about-us h2 {
-        font-size: 50px;
-        font-weight: 500;
-        line-height: 1
-    }
-    
-    .about-us {
-        margin-bottom: 50px;
-    }
-    
-    p {
+       
+p {
         margin-bottom: 12px;
     }
+
+h2 {
+    line-height: 36px;
+}
     
-    img {
+img {
     width: 300px;
-    margin-left: 25px;
-    margin-bottom: 50px
+    padding: 25px;
+    padding-bottom: 50px
     }
     
-    .fake-button {
-        background-color: #E5AF42 ;
-        color: black;
-        padding: 20px;
-        width: 250px;
-        margin-right: 150px;
-        margin: 50px;
-        text-align: center;
-        font-size: 25px;
+.fake-button {
+    color: black;
+    width: 250px;
+    margin-right: 150px;
+    margin: 50px;
+    text-align: center;
+    font-size: 25px;
     }
     
-    .fake-button:hover {
-        background-color: #4278e5;
-        color: white;
-    }
 
 /************* bookings page *************/
 
@@ -134,16 +183,11 @@ body {
     display: flex;
     flex-direction: column; 
     align-items: center;
-    padding: 150px;
+    padding: 200px;
     width: 600px;
-    margin: 0;
-
-  }
-
-.booking-page h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-  }
+    margin-bottom: -175px;
+    margin-top: -200px;
+}
   
 .booking-page p {
     font-size: 18px;
@@ -157,29 +201,21 @@ ul.flex.day-selector li {
     margin-bottom: 12px;
 }
 
-.day-selector li.clicked {
-    background-color: #E5AF42;
-}
-
-.small-button {
-    border: 1px solid black;
-    padding: 5px; 
+.top-margin {
+    margin-top: 24px;
+    margin-bottom: 12px
 }
 
 #clear-button {
     border: 1px solid black;
     width: 200px;
-    margin-top: 0px
+    margin-top: 0px;
+    margin-bottom: 12px
 } 
 
-.fake-button:hover {
-    background-color: #4278e5;
-    color: white;
-}
-
-.top-margin {
-    margin-top: 24px;
-    margin-bottom: 12px
+.small-button {
+    border: 1px solid black;
+    padding: 5px; 
 }
 
 .clicked {
