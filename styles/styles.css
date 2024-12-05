@@ -232,6 +232,21 @@ ul.flex.day-selector li {
     - the edges of the button will line up exactly with the text-area element. HINT: time for some math!
 */
 
+.contact p{
+    text-align: center;
+}
 
-
+.contact{
+    height: 420px;
+    align-items: center;
+    text-align: center;
+}
+textarea{
+    height: 150px;
+}
+input, textarea{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 24px;
+}
+button
 
