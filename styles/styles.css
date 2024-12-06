@@ -104,22 +104,22 @@ header {
     background-color: #E5AF42;
     text-align: center;
     height: 150px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 header img {
     width: 100px;
     height: 100px;
-    padding: 25px;
+    padding: 25px 0px 25px 25px;
 
 }
 footer {
     background-color: #E5AF42;
     text-align: center;
     font-weight: 200px;
-    height: 150x;
+    height: 60px;
     margin-top: 50px;
-    margin: auto;
+    padding: 15px 0px 5px 0px;
 }
 
 
@@ -139,11 +139,11 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    }
+}
        
-p {
-        margin-bottom: 12px;
-    }
+.about-us p {
+    margin-bottom: 12px;
+}
 
 h2 {
     line-height: 36px;
@@ -151,19 +151,16 @@ h2 {
     
 img {
     width: 300px;
-    padding: 25px;
-    padding-bottom: 50px
+    padding: 25px 0px 50px 25px;
     }
     
 .fake-button {
     color: black;
     width: 250px;
-    margin-right: 150px;
-    margin: 50px;
+    margin: 50px 75px 0px 75px;
     text-align: center;
     font-size: 25px;
     }
-    
 
 /************* bookings page *************/
 
@@ -183,10 +180,8 @@ img {
     display: flex;
     flex-direction: column; 
     align-items: center;
-    padding: 200px;
     width: 600px;
-    margin-bottom: -175px;
-    margin-top: -200px;
+    margin: auto;
 }
   
 .booking-page p {
@@ -202,15 +197,17 @@ ul.flex.day-selector li {
 }
 
 .top-margin {
-    margin-top: 24px;
-    margin-bottom: 12px
+    margin:24px 0px 12px 0px;
+}
+
+.top-margin.large-text {
+    font-size: 25px;
 }
 
 #clear-button {
     border: 1px solid black;
     width: 200px;
-    margin-top: 0px;
-    margin-bottom: 12px
+    margin: 0px 0px 12px 0px;
 } 
 
 .small-button {
@@ -241,12 +238,37 @@ ul.flex.day-selector li {
     align-items: center;
     text-align: center;
 }
-textarea{
+textarea{ 
     height: 150px;
 }
-input, textarea{
-    font-family: 'Montserrat', sans-serif;
-    line-height: 24px;
+#contact-page .flex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 482px;
+    margin-left: 235px;
 }
-button
+.flex label {
+    flex:0 150px;
+    margin-bottom: 24px;
+    text-align: right;
+}
 
+.flex input, textarea {
+    margin-left: 24px;
+    width: 300px;
+    align-items: left;
+}
+.contact button, textarea, input{
+    line-height: 24px;
+    font-size: 16px;
+    margin-bottom: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+.contact button {
+    height: 50px;
+    width: 300px;
+    margin: 0px 0px 0px 180px;
+}
+label[for="user-message"]{
+    padding: 0px 0px 130px 0px;
+}
