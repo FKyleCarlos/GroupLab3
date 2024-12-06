@@ -116,7 +116,7 @@ header img {
 footer {
     background-color: #E5AF42;
     text-align: center;
-    font-weight: 200px;
+    font-weight: 200;
     height: 60px;
     margin-top: 50px;
     padding: 15px 0px 5px 0px;
@@ -245,7 +245,7 @@ textarea{
     display: flex;
     flex-wrap: wrap;
     width: 482px;
-    margin-left: 235px;
+    margin: auto;
 }
 .flex label {
     flex:0 150px;
@@ -256,7 +256,7 @@ textarea{
 .flex input, textarea {
     margin-left: 24px;
     width: 300px;
-    align-items: left;
+    align-items: flex-start;
 }
 .contact button, textarea, input{
     line-height: 24px;
